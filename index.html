@@ -3,37 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css"/>
+    <link rel="stylesheet" href="src/style.css" />
     <title>Project weather</title>
   </head>
   <body>
     <div class="weather-app">
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city" required />
-        <input type="Submit" value="Search/" />
-      </form>
-    </header>
-    <main>
-        <div>
-      <h1>Nairobi</h1>
-      <p>
-        Monday 12:30, dispersed clouds
-        <br />
-        Humidity: 66%, Wind: 3.19km/h
-      </p>
-    <div>
-    ⛅12°C </div>
-    </main>
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city"
+            required
+            class="search-form-input"
+          />
+          <input type="Submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-data">
+          <div>
+            <h1 class="city-weather-app">Nairobi</h1>
+            <p class="weather-details">
+              Monday 12:30, dispersed clouds
+              <br />
+              Humidity: <strong>66%</strong>, Wind:<strong>3.19km/h</strong>
+            </p>
+          </div>
+          <div class="weather-temperature-container">
+            <div class="weather-icon">⛅</div>
+            <div class="weather-temperature">12</div>
+            <div class="weather-unit">°C</div>
+          </div>
+        </div>
+      </main>
 
-    <footer>
-      coded by<a href="https://github.com/Lydiahkh">Lydia Otieno</a> code hosted
-      <a href="https://github.com/Lydiahkh/project-weather">on Github</a>and
-      website hosted
-      <a href="https://app.netlify.com/sites/fascinating-weather-app/overview">
-        on Netlify</a
-      >
-    </footer>
+      <footer>
+        coded by <a href="https://github.com/Lydiahkh"> Lydia Otieno </a> code
+        hosted
+        <a href="https://github.com/Lydiahkh/project-weather">on Github</a> and
+        website hosted
+        <a
+          href="https://app.netlify.com/sites/fascinating-weather-app/overview"
+        >
+          on Netlify</a
+        >
+      </footer>
     </div>
   </body>
 </html>
