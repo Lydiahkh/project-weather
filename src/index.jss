@@ -29,7 +29,7 @@ function formatDate(date) {
   
   
   
-  return = `${day} ${hours}:${minutes}`;
+  return `${day} ${hours}:${minutes}`;
 }
 
 
